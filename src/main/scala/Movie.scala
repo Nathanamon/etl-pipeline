@@ -1,4 +1,4 @@
-case class Movies(
+case class Movie(
                   id: Int,
                   title: String,
                   year: Int,
@@ -8,8 +8,8 @@ case class Movies(
                   cast: List[String],
                   rating: Double,
                   votes: Int,
-                  revenue: Option[Long],
-                  budget: Option[Long],
+                  revenue: Option[Double],
+                  budget: Option[Double],
                   language: String
                 )
 

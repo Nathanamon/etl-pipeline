@@ -7,15 +7,9 @@ import scala.util.{Failure, Success, Try}
 object DataLoader {
 
   /**
-   * Lit un fichier JSON et parse les restaurants
+   * Lit un fichier JSON et parse les movies
    */
-  def loadMovies(filename: String): Either[String, List[Movies]] = {
-    // TODO: Utiliser Try pour lire le fichier
-    //   1. Créer un Source.fromFile(filename)
-    //   2. Lire le contenu avec source.mkString
-    //   3. Fermer le fichier avec source.close() - IMPORTANT !
-    //   4. Parser avec decode[List[Restaurant]](content)
-    //   5. Gérer les erreurs avec pattern matching
+  def loadMovies(filename: String): Either[String, (List[Movie], Int)] = {
     Try {
       val source = Source.fromFile(filename)
       val content = source.mkString
@@ -23,9 +17,16 @@ object DataLoader {
       content
     } match {
       case Success(content) =>
-        decode[List[Movies]](content) match {
-          case Right(movies) => Right(movies)
-          case Left(error) => Left(s"Parsing error: ${error.getMessage}")
+        decode[List[Json]](content) match {
+          case Left(error) =>
+            Left(s"Erreur de syntaxe JSON : ${error.getMessage}")
+
+          case Right(jsonList) =>
+            val results = jsonList.map(_.as[Movie])
+            val validMovies = results.collect { case Right(movies) => movies }
+
+            val parsingErrorsCount = results.count(_.isLeft)
+            Right((validMovies, parsingErrorsCount))
         }
       case Failure(exception) =>
         Left(s"File error: ${exception.getMessage}")
