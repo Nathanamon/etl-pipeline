@@ -1,0 +1,56 @@
+{
+  "statistics": {
+    "total_movies_parsed": ...,
+    "total_movies_valid": ...,
+    "parsing_errors": ...,
+    "duplicates_removed": ...
+  },
+  "top_10_rated": [
+    {
+      "title": "...",
+      "year": ...,
+      "rating": ...,
+      "votes": ...
+    }
+  ],
+  "top_10_by_votes": [...],
+  "highest_grossing": [...],
+  "most_expensive": [...],
+  "movies_by_decade": {
+    "1990s": ...,
+    "2000s": ...,
+    "2010s": ...,
+    "2020s": ...
+  },
+  "movies_by_genre": {
+    "Action": ...,
+    "Drama": ...,
+    "Comedy": ...,
+    "Thriller": ...,
+    "Sci-Fi": ...
+  },
+  "average_rating_by_genre": {
+    "Drama": ...,
+    "Thriller": ...,
+    "Action": ...,
+    "Comedy": ...,
+    "Sci-Fi": ...
+  },
+  "average_runtime_by_genre": {
+    "Drama": ...,
+    "Action": ...,
+    "Comedy": ...,
+    "Thriller": ...,
+    "Sci-Fi": ...
+  },
+  "most_prolific_directors": [
+    {"director": "...", "count": ...}
+  ],
+  "most_frequent_actors": [
+    {"actor": "...", "count": ...}
+  ],
+  "profitable_movies": {
+    "count": ...,
+    "average_roi": ...
+  }
+}
