@@ -17,8 +17,24 @@ case class MoviesStats(
                         totalMoviesParsed: Int,
                         totalMoviesValid: Int,
                         parsingErrors: Int,
+                        validationErrors: Int,
                         duplicatesRemoved: Int
                       )
+
+case class GlobalReport(
+                         statistics: MoviesStats,                    
+                         top10Rated: List[TopMovies],            
+                         top10ByVotes: List[TopMovies],          
+                         top10BoxOffice: List[Movie],                
+                         top10Budget: List[Movie],                   
+                         moviesByDecade: Map[String, Int],           
+                         moviesByGenre: Map[String, Int],            
+                         avgRatingByGenre: Map[String, Double],      
+                         avgRuntimeByGenre: Map[String, Double],     
+                         mostProlificDirectors: List[DirectorStat],  
+                         mostFrequentActors: List[ActorStat],        
+                         profitability: Profitability                 
+                       )
 
 case class TopMovies(
                       title: String,
@@ -26,6 +42,7 @@ case class TopMovies(
                       rating: Double,
                       votes: Int
                     )
+
 case class MoneyMovies(
                       title: String,
                       year: Int,
@@ -41,5 +58,6 @@ case class DirectorStat(
                        )
 case class Profitability(
                         count : Int,
-                        average_roi: Double
+                        averageRoi: Double,
+                        bestRoi : Double
                         )

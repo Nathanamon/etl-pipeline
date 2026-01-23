@@ -1,9 +1,9 @@
 object Main extends App {
-
+  val startTime = System.nanoTime()
   // 📂 Configuration : Choisis le fichier à traiter
   // Commence par "data_clean.json" (tout devrait être vert)
   // Puis passe à "data_dirty.json" pour voir le filtre en action
-  val filename = "data/data_large.json"
+  val filename = "data/data_dirty.json"
 
   println(s"🚀 DÉMARRAGE DU PIPELINE ETL SUR : $filename")
   println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
@@ -55,5 +55,19 @@ object Main extends App {
       println("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
       println(s"Total lignes lues (estimé) : ${parsedMovies.size + parsingErrors}")
       println(s"Taux de qualité            : ${if (parsedMovies.size + parsingErrors > 0) (finalMovies.size.toDouble / (parsedMovies.size + parsingErrors) * 100).toInt else 0}%")
+
+
   }
+  val endTime = System.nanoTime()
+  val totalDurationSeconds = (endTime - startTime) / 1e9 // Convertir nano -> secondes
+  // Calcul du débit (films traités par seconde)
+  // On se base souvent sur le nombre total de films lus (input)
+  val totalInputSize = 500 // Remplace par movies.size ou ton compteur totalMoviesParsed
+  val throughput = if (totalDurationSeconds > 0) totalInputSize / totalDurationSeconds else 0
+
+  println("\n⏱️  PERFORMANCE")
+  println("----------------")
+  println(f"- Temps de traitement       : $totalDurationSeconds%.3f secondes")
+  println(f"- Entrées/seconde           : $throughput%.0f films/sec")
+  println("===============================================")
 }
