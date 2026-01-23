@@ -1,73 +1,101 @@
 object Main extends App {
+
+  println("🚀 Mini-ETL : Analyse de Films\n")
+  // Chrono départ
   val startTime = System.nanoTime()
-  // 📂 Configuration : Choisis le fichier à traiter
-  // Commence par "data_clean.json" (tout devrait être vert)
-  // Puis passe à "data_dirty.json" pour voir le filtre en action
+
+  // Choix du fichier (commence par dirty pour voir la magie opérer)
   val filename = "data/data_dirty.json"
 
-  println(s"🚀 DÉMARRAGE DU PIPELINE ETL SUR : $filename")
-  println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+  // =====================================================================================
+  // LE PIPELINE ETL (Extract - Transform - Load)
+  // =====================================================================================
+  val result = for {
+    // 1️⃣ EXTRACT : Chargement des données
+    // DataLoader renvoie Either[String, (List[Movie], Int)]
+    loadedData <- DataLoader.loadMovies(filename)
+    (rawMovies, parsingErrors) = loadedData // Décomposition du tuple
+    _ = println(s"✅ EXTRACT   : ${rawMovies.size} films lus (et $parsingErrors erreurs de parsing)")
 
-  // ---------------------------------------------------------
-  // ÉTAPE 1 : EXTRACTION (Parsing JSON)
-  // ---------------------------------------------------------
-  println("\n[1/3] Chargement des données brutes...")
+    // 2️⃣ TRANSFORM : Validation & Nettoyage
+    // DataValidator renvoie une List[Movie] simple
+    validMovies = {
+      val valid = DataValidator.filterValid(rawMovies)
+      println(s"✅ TRANSFORM : ${valid.size} films valides conservés")
+      valid
+    }
 
-  DataLoader.loadMovies(filename) match {
-    case Left(criticalError) =>
-      println("❌ ERREUR CRITIQUE : Impossible de lire le fichier.")
-      println(s"   Raison : $criticalError")
+    // Calcul des statistiques de nettoyage (pour le rapport)
+    statsParsing = MoviesStats(
+      totalMoviesParsed = rawMovies.size + parsingErrors,
+      totalMoviesValid = validMovies.size,
+      parsingErrors = parsingErrors,
+      validationErrors = rawMovies.size - validMovies.size, // Approximation : ceux qui ont sauté à la validation
+      duplicatesRemoved = rawMovies.filter(DataValidator.isValid).size - validMovies.size // Diff entre valides avec et sans doublons
+    )
 
-    case Right((parsedMovies, parsingErrors)) =>
-      println(s"   ✅ Fichier lu avec succès.")
-      println(s"   📊 Films structurellement valides : ${parsedMovies.size}")
-      println(s"   🗑️  Echecs de parsing (JSON invalide) : $parsingErrors")
+    // 3️⃣ REPORTING : Génération du rapport global en mémoire
+    // ReportGenerator renvoie un GlobalReport
+    report = ReportGenerator.generateReport(validMovies, statsParsing)
+    _ = println(s"✅ REPORTING : Rapport statistique généré en mémoire")
 
-      // ---------------------------------------------------------
-      // ÉTAPE 2 : TRANSFORMATION & VALIDATION (Règles métier)
-      // ---------------------------------------------------------
-      println("\n[2/3] Application des règles métier...")
+    // 4️⃣ LOAD : Écriture sur disque (JSON & TXT)
+    _ <- ReportGenerator.writeJsonReport(report, "output/results.json")
+    _ = println(s"✅ LOAD      : JSON sauvegardé dans output/results.json")
+    _ <- ReportGenerator.writeTextReport(report, "output/report.txt")
+    _ = println(s"✅ LOAD      : Rapport texte sauvegardé dans output/report.txt")
 
-      // On passe la liste "brute" à ton validateur
-      val finalMovies = DataValidator.filterValid(parsedMovies)
+  } yield report
+/*
 
-      // Calcul des statistiques de validation
-      val rejectedCount = parsedMovies.size - finalMovies.size
 
-      println(s"   ✅ Validation terminée.")
-      println(s"   🛡️  Films rejetés (règles métier / doublons) : $rejectedCount")
-      println(s"   💎 FILMS FINAUX CONSERVÉS : ${finalMovies.size}")
+  // =====================================================================================
+  // GESTION DU RÉSULTAT FINAL & AFFICHAGE CONSOLE
+  // =====================================================================================
+  // Chrono fin
+  val endTime = System.nanoTime()
+  val duration = (endTime - startTime) / 1e9
 
-      // ---------------------------------------------------------
-      // ÉTAPE 3 : APERÇU (Pour vérifier)
-      // ---------------------------------------------------------
-      if (finalMovies.nonEmpty) {
-        println("\n[3/3] Aperçu des résultats (Top 3) :")
-        println("------------------------------------")
-        finalMovies.take(3).foreach { movie =>
-          println(s"🎬 [${movie.year}] ${movie.title} (Note: ${movie.rating})")
-        }
-      } else {
-        println("\n⚠️  ATTENTION : Aucun film n'a survécu au filtrage !")
+  result match {
+    case Right(report) =>
+      println("\n📊 APERÇU DES STATISTIQUES")
+      println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+      println(f"Films analysés      : ${report.statistics.totalMoviesParsed}")
+      println(f"Films valides       : ${report.statistics.totalMoviesValid}")
+      println(f"Note moyenne globale: ${if(report.top10Rated.nonEmpty) report.top10Rated.map(_.rating).sum / report.top10Rated.size else 0.0}%.2f (sur le Top 10)")
+
+      println("\n🏆 TOP 3 FILMS MIEUX NOTÉS")
+      println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+      report.top10Rated.take(3).zipWithIndex.foreach { case (m, i) =>
+        println(f"${i + 1}. ${m.title} (${m.year}) - ⭐ ${m.rating} (${m.votes} votes)")
       }
 
-      // Petit récapitulatif total
-      println("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-      println(s"Total lignes lues (estimé) : ${parsedMovies.size + parsingErrors}")
-      println(s"Taux de qualité            : ${if (parsedMovies.size + parsingErrors > 0) (finalMovies.size.toDouble / (parsedMovies.size + parsingErrors) * 100).toInt else 0}%")
+      println("\n🎭 TOP 3 GENRES POPULAIRES")
+      println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+      report.moviesByGenre.toList
+        .sortBy(-_._2) // Tri par nombre décroissant
+        .take(3)
+        .foreach { case (genre, count) =>
+          println(f"- $genre%-12s : $count films")
+        }
+      println("\n💰 RENTABILITÉ")
+      println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+      println(f"Films rentables : ${report.profitability.count}")
+      println(f"ROI moyen       : ${report.profitability.averageRoi}%.2f x")
+      println(f"Meilleur ROI    : ${report.profitability.bestRoi}%.2f x")
 
+      println("\n⏱️ PERFORMANCE")
+      println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+      println(f"Temps d'exécution : $duration%.3f secondes")
+      println(f"Débit             : ${report.statistics.totalMoviesParsed / duration}%.0f films/sec")
 
+      println("\n✅ Pipeline terminé avec succès !")
+
+    case Left(error) =>
+      println("\n❌ ÉCHEC DU PIPELINE")
+      println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+      println(s"Erreur rencontrée : $error")
+      sys.exit(1)
   }
-  val endTime = System.nanoTime()
-  val totalDurationSeconds = (endTime - startTime) / 1e9 // Convertir nano -> secondes
-  // Calcul du débit (films traités par seconde)
-  // On se base souvent sur le nombre total de films lus (input)
-  val totalInputSize = 500 // Remplace par movies.size ou ton compteur totalMoviesParsed
-  val throughput = if (totalDurationSeconds > 0) totalInputSize / totalDurationSeconds else 0
-
-  println("\n⏱️  PERFORMANCE")
-  println("----------------")
-  println(f"- Temps de traitement       : $totalDurationSeconds%.3f secondes")
-  println(f"- Entrées/seconde           : $throughput%.0f films/sec")
-  println("===============================================")
+*/
 }
