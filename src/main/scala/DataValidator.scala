@@ -4,7 +4,7 @@ object DataValidator {
    * Valide un restaurant selon les règles métier
    */
   def isValid(movie: Movie): Boolean = {
-    (movie.rating >= 0 && movie.rating <= 10) && (movie.year >= 1895 && movie.year <= 2025) && (movie.runtime > 0) && movie.genres.nonEmpty
+    (movie.rating >= 0 && movie.rating <= 10) && (movie.year >= 1895 && movie.year <= 2025) && (movie.runtime > 0) && movie.genres.nonEmpty && movie.director.nonEmpty
   }
 
   /**

@@ -93,7 +93,8 @@ object StatsCalculator {
    */
   def mostProlificDirectors(movies: List[Movie]): List[DirectorStat] = {
     movies
-      .flatMap(_.director)
+      .map(_.director)
+      .filter(_.trim.nonEmpty)
       .groupBy(identity)
       .map { case (dir, list) => DirectorStat(dir, list.length) }
       .toList

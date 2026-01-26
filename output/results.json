@@ -2,8 +2,8 @@
   "statistics" : {
     "total_movies_parsed" : 500,
     "total_movies_valid" : 100,
-    "parsing_errors" : 9,
-    "duplicates_removed" : 329
+    "parsing_errors" : 18,
+    "duplicates_removed" : 320
   },
   "top_10_rated" : [
     {
@@ -601,7 +601,7 @@
     "Mystery" : 7.545454545454546,
     "Sci-Fi" : 7.3500000000000005,
     "Adventure" : 7.6375,
-    "Action" : 7.429999999999999,
+    "Action" : 7.430000000000001,
     "Biography" : 7.083333333333333,
     "Comedy" : 7.641666666666668
   },
@@ -619,15 +619,15 @@
   },
   "most_prolific_directors" : [
     {
+      "director" : "Christopher Nolan",
+      "count" : 11
+    },
+    {
       "director" : "Paul Thomas Anderson",
       "count" : 9
     },
     {
       "director" : "Alfonso Cuarón",
-      "count" : 9
-    },
-    {
-      "director" : "Christopher Nolan",
       "count" : 9
     },
     {

@@ -6,8 +6,9 @@
 ---------------------------
 - Entrées totales lues      : 500
 - Entrées valides           : 100
-- Erreurs de parsing        : 9
-- Doublons supprimés        : 329
+- Erreurs de parsing        : 18
+- Erreurs de validation     : 62
+- Doublons supprimés        : 320
 
 ⭐ TOP 10 - MEILLEURS FILMS
 ----------------------------
@@ -109,9 +110,9 @@ DURÉE MOYENNE :
 
 🎬 TOP 5 - RÉALISATEURS
 ------------------------
-1. Paul Thomas Anderson      : 9 films
-2. Alfonso Cuarón            : 9 films
-3. Christopher Nolan         : 9 films
+1. Christopher Nolan         : 11 films
+2. Paul Thomas Anderson      : 9 films
+3. Alfonso Cuarón            : 9 films
 4. Martin Scorsese           : 8 films
 5. Wes Anderson              : 8 films
 

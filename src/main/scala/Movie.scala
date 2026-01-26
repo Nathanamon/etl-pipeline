@@ -4,7 +4,7 @@ case class Movie(
                   year: Int,
                   runtime: Int,
                   genres: List[String],
-                  director: Option[String],
+                  director: String,
                   cast: List[String],
                   rating: Double,
                   votes: Int,

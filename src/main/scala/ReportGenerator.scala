@@ -81,6 +81,7 @@ object ReportGenerator {
       sb.append(f"- Entrées totales lues      : ${stat.totalMoviesParsed}\n")
       sb.append(f"- Entrées valides           : ${stat.totalMoviesValid}\n")
       sb.append(f"- Erreurs de parsing        : ${stat.parsingErrors}\n")
+      sb.append(f"- Erreurs de validation     : ${stat.validationErrors}\n")
       sb.append(f"- Doublons supprimés        : ${stat.duplicatesRemoved}\n\n")
 
       sb.append("⭐ TOP 10 - MEILLEURS FILMS\n")
