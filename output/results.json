@@ -1,12 +1,11 @@
 {
   "statistics" : {
-    "totalMoviesParsed" : 500,
-    "totalMoviesValid" : 100,
-    "parsingErrors" : 9,
-    "validationErrors" : 391,
-    "duplicatesRemoved" : 329
+    "total_movies_parsed" : 500,
+    "total_movies_valid" : 100,
+    "parsing_errors" : 9,
+    "duplicates_removed" : 329
   },
-  "top10Rated" : [
+  "top_10_rated" : [
     {
       "title" : "Hidden Truth 71",
       "year" : 2016,
@@ -68,7 +67,7 @@
       "votes" : 2197569
     }
   ],
-  "top10ByVotes" : [
+  "top_10_by_votes" : [
     {
       "title" : "Time Traveler 2",
       "year" : 1997,
@@ -130,7 +129,7 @@
       "votes" : 2620170
     }
   ],
-  "top10BoxOffice" : [
+  "highest_grossing" : [
     {
       "id" : 78,
       "title" : "Final Mission 73",
@@ -349,7 +348,7 @@
       "language" : "Spanish"
     }
   ],
-  "top10Budget" : [
+  "most_expensive" : [
     {
       "id" : 27,
       "title" : "Lost Memories 84",
@@ -576,13 +575,13 @@
       "language" : "German"
     }
   ],
-  "moviesByDecade" : {
+  "movies_by_decade" : {
     "2020s" : 17,
     "1990s" : 22,
     "2000s" : 31,
     "2010s" : 30
   },
-  "moviesByGenre" : {
+  "movies_by_genre" : {
     "Thriller" : 31,
     "Horror" : 10,
     "Romance" : 20,
@@ -594,7 +593,7 @@
     "Biography" : 6,
     "Comedy" : 24
   },
-  "avgRatingByGenre" : {
+  "average_rating_by_genre" : {
     "Thriller" : 7.677419354838711,
     "Horror" : 8.139999999999999,
     "Romance" : 7.790000000000001,
@@ -606,7 +605,7 @@
     "Biography" : 7.083333333333333,
     "Comedy" : 7.641666666666668
   },
-  "avgRuntimeByGenre" : {
+  "average_runtime_by_genre" : {
     "Thriller" : 130.48387096774192,
     "Horror" : 136.1,
     "Romance" : 146.15,
@@ -618,7 +617,7 @@
     "Biography" : 130.66666666666666,
     "Comedy" : 142.41666666666666
   },
-  "mostProlificDirectors" : [
+  "most_prolific_directors" : [
     {
       "director" : "Paul Thomas Anderson",
       "count" : 9
@@ -640,7 +639,7 @@
       "count" : 8
     }
   ],
-  "mostFrequentActors" : [
+  "most_frequent_actors" : [
     {
       "actor" : "Scarlett Johansson",
       "count" : 34
@@ -662,9 +661,8 @@
       "count" : 27
     }
   ],
-  "profitability" : {
+  "profitable_movies" : {
     "count" : 38,
-    "averageRoi" : 22.03889948490398,
-    "bestRoi" : 137.0232558139535
+    "average_roi" : 22.03889948490398
   }
 }

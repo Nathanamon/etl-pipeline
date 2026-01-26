@@ -1,49 +1,35 @@
 object Main extends App {
 
   println("🚀 Mini-ETL : Analyse de Films\n")
-  // Chrono départ
   val startTime = System.nanoTime()
-
-  // Choix du fichier (commence par dirty pour voir la magie opérer)
   val filename = "data/data_dirty.json"
-
-  // =====================================================================================
-  // LE PIPELINE ETL (Extract - Transform - Load)
-  // =====================================================================================
+  
   val result = for {
-    // 1️⃣ EXTRACT : Chargement des données
-    // DataLoader renvoie Either[String, (List[Movie], Int)]
     loadedData <- DataLoader.loadMovies(filename)
     (rawMovies, parsingErrors) = loadedData // Décomposition du tuple
-    _ = println(s"✅ EXTRACT   : ${rawMovies.size} films lus (et $parsingErrors erreurs de parsing)")
-
-    // 2️⃣ TRANSFORM : Validation & Nettoyage
-    // DataValidator renvoie une List[Movie] simple
+    _ = println(s"EXTRACT   : ${rawMovies.size} films lus (et $parsingErrors erreurs de parsing)")
+    
     validMovies = {
       val valid = DataValidator.filterValid(rawMovies)
-      println(s"✅ TRANSFORM : ${valid.size} films valides conservés")
+      println(s"TRANSFORM : ${valid.size} films valides conservés")
       valid
     }
-
-    // Calcul des statistiques de nettoyage (pour le rapport)
+    
     statsParsing = MoviesStats(
       totalMoviesParsed = rawMovies.size + parsingErrors,
       totalMoviesValid = validMovies.size,
       parsingErrors = parsingErrors,
-      validationErrors = rawMovies.size - validMovies.size, // Approximation : ceux qui ont sauté à la validation
-      duplicatesRemoved = rawMovies.filter(DataValidator.isValid).size - validMovies.size // Diff entre valides avec et sans doublons
+      validationErrors = rawMovies.size - validMovies.size,
+      duplicatesRemoved = rawMovies.filter(DataValidator.isValid).size - validMovies.size
     )
-
-    // 3️⃣ REPORTING : Génération du rapport global en mémoire
-    // ReportGenerator renvoie un GlobalReport
+    
     report = ReportGenerator.generateReport(validMovies, statsParsing)
-    _ = println(s"✅ REPORTING : Rapport statistique généré en mémoire")
-
-    // 4️⃣ LOAD : Écriture sur disque (JSON & TXT)
+    _ = println(s"REPORTING : Rapport statistique généré en mémoire")
+    
     _ <- ReportGenerator.writeJsonReport(report, "output/results.json")
-    _ = println(s"✅ LOAD      : JSON sauvegardé dans output/results.json")
+    _ = println(s"LOAD      : JSON sauvegardé dans output/results.json")
     _ <- ReportGenerator.writeTextReport(report, "output/report.txt")
-    _ = println(s"✅ LOAD      : Rapport texte sauvegardé dans output/report.txt")
+    _ = println(s"LOAD      : Rapport texte sauvegardé dans output/report.txt")
 
   } yield report
 /*
