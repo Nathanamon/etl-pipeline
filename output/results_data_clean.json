@@ -1,0 +1,671 @@
+{
+  "statistics" : {
+    "total_movies_parsed" : 100,
+    "total_movies_valid" : 100,
+    "parsing_errors" : 0,
+    "duplicates_removed" : 0
+  },
+  "top_10_rated" : [
+    {
+      "title" : "Hidden Truth 71",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Cyber Reality 36",
+      "year" : 2017,
+      "rating" : 9.4,
+      "votes" : 2108828
+    },
+    {
+      "title" : "Cyber Reality 56",
+      "year" : 2015,
+      "rating" : 9.4,
+      "votes" : 1070291
+    },
+    {
+      "title" : "Star Voyager 52",
+      "year" : 1995,
+      "rating" : 9.4,
+      "votes" : 717638
+    },
+    {
+      "title" : "Broken Dreams 86",
+      "year" : 2008,
+      "rating" : 9.4,
+      "votes" : 257002
+    },
+    {
+      "title" : "Hidden Truth 49",
+      "year" : 1996,
+      "rating" : 9.4,
+      "votes" : 2102764
+    },
+    {
+      "title" : "Broken Dreams 94",
+      "year" : 2001,
+      "rating" : 9.2,
+      "votes" : 1039971
+    },
+    {
+      "title" : "Final Mission 73",
+      "year" : 1997,
+      "rating" : 9.2,
+      "votes" : 138959
+    },
+    {
+      "title" : "Final Hour 12",
+      "year" : 2005,
+      "rating" : 9.1,
+      "votes" : 1190115
+    },
+    {
+      "title" : "Dark Secrets 78",
+      "year" : 2001,
+      "rating" : 9.1,
+      "votes" : 1820040
+    }
+  ],
+  "top_10_by_votes" : [
+    {
+      "title" : "Time Traveler 2",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Dark Secrets 60",
+      "year" : 2000,
+      "rating" : 8.3,
+      "votes" : 2889517
+    },
+    {
+      "title" : "Steel Fury 71",
+      "year" : 2000,
+      "rating" : 8.1,
+      "votes" : 2882917
+    },
+    {
+      "title" : "Dark Justice 53",
+      "year" : 2016,
+      "rating" : 7.8,
+      "votes" : 2857098
+    },
+    {
+      "title" : "Quantum Leap 92",
+      "year" : 2017,
+      "rating" : 7.0,
+      "votes" : 2844850
+    },
+    {
+      "title" : "AI Revolution 1",
+      "year" : 2013,
+      "rating" : 9.0,
+      "votes" : 2807784
+    },
+    {
+      "title" : "Office Madness 48",
+      "year" : 2000,
+      "rating" : 8.3,
+      "votes" : 2720844
+    },
+    {
+      "title" : "Dark Secrets 55",
+      "year" : 1992,
+      "rating" : 7.4,
+      "votes" : 2662245
+    },
+    {
+      "title" : "Hidden Truth 71",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Lost Memories 98",
+      "year" : 2011,
+      "rating" : 8.4,
+      "votes" : 2620170
+    }
+  ],
+  "highest_grossing" : [
+    {
+      "id" : 78,
+      "title" : "Final Mission 73",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 25,
+      "title" : "Broken Dreams 58",
+      "year" : 2017,
+      "runtime" : 169,
+      "genres" : [
+        "Comedy",
+        "Romance"
+      ],
+      "director" : "Greta Gerwig",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Samuel L. Jackson",
+        "Hugh Jackman",
+        "Denzel Washington"
+      ],
+      "rating" : 8.6,
+      "votes" : 522447,
+      "revenue" : 1947.9,
+      "budget" : 96.7,
+      "language" : "Korean"
+    },
+    {
+      "id" : 53,
+      "title" : "Wedding Disaster 89",
+      "year" : 2005,
+      "runtime" : 105,
+      "genres" : [
+        "Drama"
+      ],
+      "director" : "Alfonso Cuarón",
+      "cast" : [
+        "Denzel Washington",
+        "Tom Hanks",
+        "Johnny Depp"
+      ],
+      "rating" : 5.6,
+      "votes" : 1698478,
+      "revenue" : 1900.4,
+      "budget" : 124.4,
+      "language" : "Italian"
+    },
+    {
+      "id" : 47,
+      "title" : "Final Mission 1",
+      "year" : 1991,
+      "runtime" : 143,
+      "genres" : [
+        "Sci-Fi",
+        "Action"
+      ],
+      "director" : "Alfonso Cuarón",
+      "cast" : [
+        "Samuel L. Jackson",
+        "Will Smith",
+        "Leonardo DiCaprio"
+      ],
+      "rating" : 9.0,
+      "votes" : 196447,
+      "revenue" : 1884.3,
+      "budget" : 322.7,
+      "language" : "English"
+    },
+    {
+      "id" : 44,
+      "title" : "Hidden Truth 95",
+      "year" : 1996,
+      "runtime" : 91,
+      "genres" : [
+        "Comedy"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Emma Stone",
+        "Brad Pitt"
+      ],
+      "rating" : 7.8,
+      "votes" : 1813038,
+      "revenue" : 1876.8,
+      "budget" : null,
+      "language" : "German"
+    },
+    {
+      "id" : 59,
+      "title" : "Mars Colony 52",
+      "year" : 2021,
+      "runtime" : 177,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Peter Jackson",
+      "cast" : [
+        "Natalie Portman",
+        "Scarlett Johansson",
+        "Ryan Gosling",
+        "Tom Hanks"
+      ],
+      "rating" : 8.5,
+      "votes" : 2121711,
+      "revenue" : 1870.4,
+      "budget" : 165.9,
+      "language" : "Japanese"
+    },
+    {
+      "id" : 100,
+      "title" : "Happy Accidents 20",
+      "year" : 2020,
+      "runtime" : 109,
+      "genres" : [
+        "Sci-Fi",
+        "Action"
+      ],
+      "director" : "Wes Anderson",
+      "cast" : [
+        "Will Smith",
+        "Hugh Jackman",
+        "Christian Bale"
+      ],
+      "rating" : 7.6,
+      "votes" : 261395,
+      "revenue" : 1842.9,
+      "budget" : null,
+      "language" : "English"
+    },
+    {
+      "id" : 97,
+      "title" : "Silent Killer 28",
+      "year" : 2018,
+      "runtime" : 138,
+      "genres" : [
+        "Drama",
+        "Biography"
+      ],
+      "director" : "Peter Jackson",
+      "cast" : [
+        "Emma Stone",
+        "Denzel Washington",
+        "Christian Bale",
+        "Hugh Jackman",
+        "Matt Damon",
+        "Samuel L. Jackson"
+      ],
+      "rating" : 6.7,
+      "votes" : 607631,
+      "revenue" : 1761.7,
+      "budget" : null,
+      "language" : "Spanish"
+    },
+    {
+      "id" : 6,
+      "title" : "Dark Secrets 74",
+      "year" : 2008,
+      "runtime" : 97,
+      "genres" : [
+        "Sci-Fi",
+        "Action"
+      ],
+      "director" : "Wes Anderson",
+      "cast" : [
+        "Scarlett Johansson",
+        "Matt Damon",
+        "Brad Pitt"
+      ],
+      "rating" : 7.2,
+      "votes" : 1429082,
+      "revenue" : 1755.8,
+      "budget" : 17.7,
+      "language" : "Spanish"
+    },
+    {
+      "id" : 43,
+      "title" : "Night Watch 81",
+      "year" : 2011,
+      "runtime" : 172,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Paul Thomas Anderson",
+      "cast" : [
+        "Jennifer Lawrence",
+        "Johnny Depp",
+        "Matt Damon",
+        "Ryan Gosling",
+        "Leonardo DiCaprio"
+      ],
+      "rating" : 5.8,
+      "votes" : 692966,
+      "revenue" : 1754.1,
+      "budget" : 281.2,
+      "language" : "Spanish"
+    }
+  ],
+  "most_expensive" : [
+    {
+      "id" : 27,
+      "title" : "Lost Memories 84",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 34,
+      "title" : "Eternal Light 15",
+      "year" : 2010,
+      "runtime" : 150,
+      "genres" : [
+        "Drama",
+        "Biography"
+      ],
+      "director" : "Paul Thomas Anderson",
+      "cast" : [
+        "Natalie Portman",
+        "Denzel Washington",
+        "Scarlett Johansson",
+        "Tom Cruise",
+        "Meryl Streep"
+      ],
+      "rating" : 6.8,
+      "votes" : 424143,
+      "revenue" : 860.8,
+      "budget" : 325.3,
+      "language" : "French"
+    },
+    {
+      "id" : 9,
+      "title" : "Silent Killer 13",
+      "year" : 2023,
+      "runtime" : 108,
+      "genres" : [
+        "Action",
+        "Adventure"
+      ],
+      "director" : "Steven Spielberg",
+      "cast" : [
+        "Morgan Freeman",
+        "Tom Hanks",
+        "Robert Downey Jr.",
+        "Scarlett Johansson",
+        "Johnny Depp"
+      ],
+      "rating" : 6.4,
+      "votes" : 1777819,
+      "revenue" : 1587.3,
+      "budget" : 325.0,
+      "language" : "French"
+    },
+    {
+      "id" : 47,
+      "title" : "Final Mission 1",
+      "year" : 1991,
+      "runtime" : 143,
+      "genres" : [
+        "Sci-Fi",
+        "Action"
+      ],
+      "director" : "Alfonso Cuarón",
+      "cast" : [
+        "Samuel L. Jackson",
+        "Will Smith",
+        "Leonardo DiCaprio"
+      ],
+      "rating" : 9.0,
+      "votes" : 196447,
+      "revenue" : 1884.3,
+      "budget" : 322.7,
+      "language" : "English"
+    },
+    {
+      "id" : 68,
+      "title" : "Office Madness 78",
+      "year" : 2001,
+      "runtime" : 153,
+      "genres" : [
+        "Comedy",
+        "Romance"
+      ],
+      "director" : "Martin Scorsese",
+      "cast" : [
+        "Hugh Jackman",
+        "Christian Bale",
+        "Meryl Streep",
+        "Emma Stone"
+      ],
+      "rating" : 9.1,
+      "votes" : 2197569,
+      "revenue" : 1265.6,
+      "budget" : 306.5,
+      "language" : "Italian"
+    },
+    {
+      "id" : 86,
+      "title" : "Broken Dreams 86",
+      "year" : 2008,
+      "runtime" : 104,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Ridley Scott",
+      "cast" : [
+        "Cate Blanchett",
+        "Scarlett Johansson",
+        "Tom Cruise",
+        "Meryl Streep",
+        "Brad Pitt",
+        "Morgan Freeman"
+      ],
+      "rating" : 9.4,
+      "votes" : 257002,
+      "revenue" : 89.8,
+      "budget" : 306.0,
+      "language" : "Italian"
+    },
+    {
+      "id" : 32,
+      "title" : "Mars Colony 94",
+      "year" : 1999,
+      "runtime" : 142,
+      "genres" : [
+        "Action",
+        "Thriller"
+      ],
+      "director" : "Quentin Tarantino",
+      "cast" : [
+        "Natalie Portman",
+        "Emma Stone",
+        "Meryl Streep",
+        "Leonardo DiCaprio",
+        "Johnny Depp",
+        "Scarlett Johansson"
+      ],
+      "rating" : 8.1,
+      "votes" : 1828397,
+      "revenue" : 513.3,
+      "budget" : 303.7,
+      "language" : "Italian"
+    },
+    {
+      "id" : 14,
+      "title" : "Cyber Hunt 29",
+      "year" : 2023,
+      "runtime" : 108,
+      "genres" : [
+        "Action",
+        "Thriller"
+      ],
+      "director" : "Paul Thomas Anderson",
+      "cast" : [
+        "Samuel L. Jackson",
+        "Meryl Streep",
+        "Robert Downey Jr.",
+        "Denzel Washington"
+      ],
+      "rating" : 7.8,
+      "votes" : 958614,
+      "revenue" : null,
+      "budget" : 299.2,
+      "language" : "French"
+    },
+    {
+      "id" : 41,
+      "title" : "Cyber Reality 34",
+      "year" : 2022,
+      "runtime" : 133,
+      "genres" : [
+        "Sci-Fi",
+        "Action"
+      ],
+      "director" : "David Fincher",
+      "cast" : [
+        "Johnny Depp",
+        "Tom Cruise",
+        "Robert Downey Jr.",
+        "Leonardo DiCaprio",
+        "Ryan Gosling",
+        "Natalie Portman"
+      ],
+      "rating" : 5.9,
+      "votes" : 2344185,
+      "revenue" : 1296.1,
+      "budget" : 283.0,
+      "language" : "French"
+    },
+    {
+      "id" : 43,
+      "title" : "Night Watch 81",
+      "year" : 2011,
+      "runtime" : 172,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Paul Thomas Anderson",
+      "cast" : [
+        "Jennifer Lawrence",
+        "Johnny Depp",
+        "Matt Damon",
+        "Ryan Gosling",
+        "Leonardo DiCaprio"
+      ],
+      "rating" : 5.8,
+      "votes" : 692966,
+      "revenue" : 1754.1,
+      "budget" : 281.2,
+      "language" : "Spanish"
+    }
+  ],
+  "movies_by_decade" : {
+    "2020s" : 17,
+    "1990s" : 22,
+    "2000s" : 31,
+    "2010s" : 30
+  },
+  "movies_by_genre" : {
+    "Thriller" : 31,
+    "Horror" : 10,
+    "Romance" : 20,
+    "Drama" : 25,
+    "Mystery" : 11,
+    "Sci-Fi" : 12,
+    "Adventure" : 8,
+    "Action" : 30,
+    "Biography" : 6,
+    "Comedy" : 24
+  },
+  "average_rating_by_genre" : {
+    "Thriller" : 7.677419354838711,
+    "Horror" : 8.14,
+    "Romance" : 7.789999999999997,
+    "Drama" : 7.447999999999999,
+    "Mystery" : 7.545454545454546,
+    "Sci-Fi" : 7.349999999999999,
+    "Adventure" : 7.637499999999999,
+    "Action" : 7.430000000000001,
+    "Biography" : 7.083333333333333,
+    "Comedy" : 7.641666666666667
+  },
+  "average_runtime_by_genre" : {
+    "Thriller" : 130.48387096774192,
+    "Horror" : 136.1,
+    "Romance" : 146.15,
+    "Drama" : 128.84,
+    "Mystery" : 118.45454545454545,
+    "Sci-Fi" : 134.08333333333334,
+    "Adventure" : 138.25,
+    "Action" : 136.53333333333333,
+    "Biography" : 130.66666666666666,
+    "Comedy" : 142.41666666666666
+  },
+  "most_prolific_directors" : [
+    {
+      "director" : "Christopher Nolan",
+      "count" : 11
+    },
+    {
+      "director" : "Paul Thomas Anderson",
+      "count" : 9
+    },
+    {
+      "director" : "Martin Scorsese",
+      "count" : 8
+    },
+    {
+      "director" : "Alfonso Cuarón",
+      "count" : 8
+    },
+    {
+      "director" : "Wes Anderson",
+      "count" : 8
+    }
+  ],
+  "most_frequent_actors" : [
+    {
+      "actor" : "Scarlett Johansson",
+      "count" : 34
+    },
+    {
+      "actor" : "Will Smith",
+      "count" : 30
+    },
+    {
+      "actor" : "Samuel L. Jackson",
+      "count" : 28
+    },
+    {
+      "actor" : "Tom Cruise",
+      "count" : 28
+    },
+    {
+      "actor" : "Morgan Freeman",
+      "count" : 27
+    }
+  ],
+  "profitable_movies" : {
+    "count" : 39,
+    "average_roi" : 21.12313452897873
+  }
+}

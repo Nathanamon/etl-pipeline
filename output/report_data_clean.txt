@@ -4,24 +4,24 @@
 
 📊 STATISTIQUES DE PARSING
 ---------------------------
-- Entrées totales lues      : 500
+- Entrées totales lues      : 100
 - Entrées valides           : 100
-- Erreurs de parsing        : 18
-- Erreurs de validation     : 62
-- Doublons supprimés        : 320
+- Erreurs de parsing        : 0
+- Erreurs de validation     : 0
+- Doublons supprimés        : 0
 
 ⭐ TOP 10 - MEILLEURS FILMS
 ----------------------------
 1. Hidden Truth 71 (2016) : 9.5 (2643533 votes)
-2. Hidden Truth 49 (1996) : 9.4 (2102764 votes)
-3. Star Voyager 52 (1995) : 9.4 (717638 votes)
-4. Cyber Reality 36 (2017) : 9.4 (2108828 votes)
-5. Cyber Reality 56 (2015) : 9.4 (1070291 votes)
-6. Broken Dreams 86 (2008) : 9.4 (257002 votes)
+2. Cyber Reality 36 (2017) : 9.4 (2108828 votes)
+3. Cyber Reality 56 (2015) : 9.4 (1070291 votes)
+4. Star Voyager 52 (1995) : 9.4 (717638 votes)
+5. Broken Dreams 86 (2008) : 9.4 (257002 votes)
+6. Hidden Truth 49 (1996) : 9.4 (2102764 votes)
 7. Broken Dreams 94 (2001) : 9.2 (1039971 votes)
 8. Final Mission 73 (1997) : 9.2 (138959 votes)
-9. Dark Secrets 78 (2001) : 9.1 (1820040 votes)
-10. Office Madness 78 (2001) : 9.1 (2197569 votes)
+9. Final Hour 12 (2005) : 9.1 (1190115 votes)
+10. Dark Secrets 78 (2001) : 9.1 (1820040 votes)
 
 📊 TOP 10 - PLUS VOTÉS
 -----------------------
@@ -56,11 +56,11 @@
 3. Silent Killer 13 : 325 M$
 4. Final Mission 1 : 323 M$
 5. Office Madness 78 : 307 M$
-6. Mars Colony 94 : 304 M$
-7. Cyber Hunt 29 : 299 M$
-8. Cyber Reality 34 : 283 M$
-9. Night Watch 81 : 281 M$
-10. Quantum Leap 40 : 280 M$
+6. Broken Dreams 86 : 306 M$
+7. Mars Colony 94 : 304 M$
+8. Cyber Hunt 29 : 299 M$
+9. Cyber Reality 34 : 283 M$
+10. Night Watch 81 : 281 M$
 
 📅 RÉPARTITION PAR DÉCENNIE
 ----------------------------
@@ -93,7 +93,7 @@ NOTE MOYENNE :
 - Mystery                   : 7,5/10
 - Drama                     : 7,4/10
 - Action                    : 7,4/10
-- Sci-Fi                    : 7,4/10
+- Sci-Fi                    : 7,3/10
 - Biography                 : 7,1/10
 
 DURÉE MOYENNE :
@@ -112,8 +112,8 @@ DURÉE MOYENNE :
 ------------------------
 1. Christopher Nolan         : 11 films
 2. Paul Thomas Anderson      : 9 films
-3. Alfonso Cuarón            : 9 films
-4. Martin Scorsese           : 8 films
+3. Martin Scorsese           : 8 films
+4. Alfonso Cuarón            : 8 films
 5. Wes Anderson              : 8 films
 
 🎭 TOP 5 - ACTEURS
@@ -126,13 +126,13 @@ DURÉE MOYENNE :
 
 💵 RENTABILITÉ
 --------------
-- Films rentables           : 38
-- ROI moyen                 : 22,04x
+- Films rentables           : 39
+- ROI moyen                 : 21,12x
 - Meilleur ROI              : 137,02x
 
 ⏱️  PERFORMANCE
 ---------------
-- Temps de traitement       : 0,000 secondes
-- Entrées/seconde           : 0
+- Temps de traitement       : 0,469 secondes
+- Entrées/seconde           : 213
 
 ===============================================

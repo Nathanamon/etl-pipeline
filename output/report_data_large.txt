@@ -1,0 +1,138 @@
+===============================================
+     RAPPORT D'ANALYSE - FILMS & SÉRIES
+===============================================
+
+📊 STATISTIQUES DE PARSING
+---------------------------
+- Entrées totales lues      : 15000
+- Entrées valides           : 15000
+- Erreurs de parsing        : 0
+- Erreurs de validation     : 0
+- Doublons supprimés        : 0
+
+⭐ TOP 10 - MEILLEURS FILMS
+----------------------------
+1. Hidden Truth 71 (2016) : 9.5 (2643533 votes)
+2. Hidden Truth 71 Vol.1 (2016) : 9.5 (2643533 votes)
+3. Hidden Truth 71 Vol.2 (2016) : 9.5 (2643533 votes)
+4. Hidden Truth 71 Vol.3 (2016) : 9.5 (2643533 votes)
+5. Hidden Truth 71 Vol.4 (2016) : 9.5 (2643533 votes)
+6. Hidden Truth 71 Vol.5 (2016) : 9.5 (2643533 votes)
+7. Hidden Truth 71 Vol.6 (2016) : 9.5 (2643533 votes)
+8. Hidden Truth 71 Vol.7 (2016) : 9.5 (2643533 votes)
+9. Hidden Truth 71 Vol.8 (2016) : 9.5 (2643533 votes)
+10. Hidden Truth 71 Vol.9 (2016) : 9.5 (2643533 votes)
+
+📊 TOP 10 - PLUS VOTÉS
+-----------------------
+1. Time Traveler 2 : 2942903 votes
+2. Time Traveler 2 Vol.1 : 2942903 votes
+3. Time Traveler 2 Vol.2 : 2942903 votes
+4. Time Traveler 2 Vol.3 : 2942903 votes
+5. Time Traveler 2 Vol.4 : 2942903 votes
+6. Time Traveler 2 Vol.5 : 2942903 votes
+7. Time Traveler 2 Vol.6 : 2942903 votes
+8. Time Traveler 2 Vol.7 : 2942903 votes
+9. Time Traveler 2 Vol.8 : 2942903 votes
+10. Time Traveler 2 Vol.9 : 2942903 votes
+
+💰 TOP 10 - BOX-OFFICE
+-----------------------
+1. Final Mission 73 : 1995 M$
+2. Final Mission 73 Vol.1 : 1995 M$
+3. Final Mission 73 Vol.2 : 1995 M$
+4. Final Mission 73 Vol.3 : 1995 M$
+5. Final Mission 73 Vol.4 : 1995 M$
+6. Final Mission 73 Vol.5 : 1995 M$
+7. Final Mission 73 Vol.6 : 1995 M$
+8. Final Mission 73 Vol.7 : 1995 M$
+9. Final Mission 73 Vol.8 : 1995 M$
+10. Final Mission 73 Vol.9 : 1995 M$
+
+💸 TOP 10 - BUDGETS
+-------------------
+1. Lost Memories 84 : 339 M$
+2. Lost Memories 84 Vol.1 : 339 M$
+3. Lost Memories 84 Vol.2 : 339 M$
+4. Lost Memories 84 Vol.3 : 339 M$
+5. Lost Memories 84 Vol.4 : 339 M$
+6. Lost Memories 84 Vol.5 : 339 M$
+7. Lost Memories 84 Vol.6 : 339 M$
+8. Lost Memories 84 Vol.7 : 339 M$
+9. Lost Memories 84 Vol.8 : 339 M$
+10. Lost Memories 84 Vol.9 : 339 M$
+
+📅 RÉPARTITION PAR DÉCENNIE
+----------------------------
+- 1990s                     : 3300 films
+- 2000s                     : 4650 films
+- 2010s                     : 4500 films
+- 2020s                     : 2550 films
+
+🎭 RÉPARTITION PAR GENRE
+-------------------------
+- Thriller                  : 4650 films
+- Action                    : 4500 films
+- Drama                     : 3750 films
+- Comedy                    : 3600 films
+- Romance                   : 3000 films
+- Sci-Fi                    : 1800 films
+- Mystery                   : 1650 films
+- Horror                    : 1500 films
+- Adventure                 : 1200 films
+- Biography                 : 900 films
+
+📈 MOYENNES PAR GENRE
+----------------------
+NOTE MOYENNE :
+- Horror                    : 8,1/10
+- Romance                   : 7,8/10
+- Thriller                  : 7,7/10
+- Comedy                    : 7,6/10
+- Adventure                 : 7,6/10
+- Mystery                   : 7,5/10
+- Drama                     : 7,4/10
+- Action                    : 7,4/10
+- Sci-Fi                    : 7,4/10
+- Biography                 : 7,1/10
+
+DURÉE MOYENNE :
+- Romance                   : 146 minutes
+- Comedy                    : 142 minutes
+- Adventure                 : 138 minutes
+- Action                    : 137 minutes
+- Horror                    : 136 minutes
+- Sci-Fi                    : 134 minutes
+- Biography                 : 131 minutes
+- Thriller                  : 130 minutes
+- Drama                     : 129 minutes
+- Mystery                   : 118 minutes
+
+🎬 TOP 5 - RÉALISATEURS
+------------------------
+1. Christopher Nolan         : 1650 films
+2. Paul Thomas Anderson      : 1350 films
+3. Alfonso Cuarón            : 1350 films
+4. Martin Scorsese           : 1200 films
+5. Wes Anderson              : 1200 films
+
+🎭 TOP 5 - ACTEURS
+-------------------
+1. Scarlett Johansson        : 5100 films
+2. Will Smith                : 4500 films
+3. Samuel L. Jackson         : 4200 films
+4. Tom Cruise                : 4200 films
+5. Morgan Freeman            : 4050 films
+
+💵 RENTABILITÉ
+--------------
+- Films rentables           : 5850
+- ROI moyen                 : 21,12x
+- Meilleur ROI              : 137,02x
+
+⏱️  PERFORMANCE
+---------------
+- Temps de traitement       : 0,535 secondes
+- Entrées/seconde           : 28021
+
+===============================================

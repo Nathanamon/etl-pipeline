@@ -1,0 +1,666 @@
+{
+  "statistics" : {
+    "total_movies_parsed" : 15000,
+    "total_movies_valid" : 15000,
+    "parsing_errors" : 0,
+    "duplicates_removed" : 0
+  },
+  "top_10_rated" : [
+    {
+      "title" : "Hidden Truth 71",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.1",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.2",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.3",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.4",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.5",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.6",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.7",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.8",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    },
+    {
+      "title" : "Hidden Truth 71 Vol.9",
+      "year" : 2016,
+      "rating" : 9.5,
+      "votes" : 2643533
+    }
+  ],
+  "top_10_by_votes" : [
+    {
+      "title" : "Time Traveler 2",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.1",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.2",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.3",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.4",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.5",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.6",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.7",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.8",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    },
+    {
+      "title" : "Time Traveler 2 Vol.9",
+      "year" : 1997,
+      "rating" : 6.7,
+      "votes" : 2942903
+    }
+  ],
+  "highest_grossing" : [
+    {
+      "id" : 78,
+      "title" : "Final Mission 73",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 178,
+      "title" : "Final Mission 73 Vol.1",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 278,
+      "title" : "Final Mission 73 Vol.2",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 378,
+      "title" : "Final Mission 73 Vol.3",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 478,
+      "title" : "Final Mission 73 Vol.4",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 578,
+      "title" : "Final Mission 73 Vol.5",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 678,
+      "title" : "Final Mission 73 Vol.6",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 778,
+      "title" : "Final Mission 73 Vol.7",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 878,
+      "title" : "Final Mission 73 Vol.8",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    },
+    {
+      "id" : 978,
+      "title" : "Final Mission 73 Vol.9",
+      "year" : 1997,
+      "runtime" : 119,
+      "genres" : [
+        "Horror",
+        "Thriller"
+      ],
+      "director" : "Guillermo del Toro",
+      "cast" : [
+        "Brad Pitt",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Jennifer Lawrence"
+      ],
+      "rating" : 9.2,
+      "votes" : 138959,
+      "revenue" : 1994.5,
+      "budget" : 38.6,
+      "language" : "English"
+    }
+  ],
+  "most_expensive" : [
+    {
+      "id" : 27,
+      "title" : "Lost Memories 84",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 127,
+      "title" : "Lost Memories 84 Vol.1",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 227,
+      "title" : "Lost Memories 84 Vol.2",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 327,
+      "title" : "Lost Memories 84 Vol.3",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 427,
+      "title" : "Lost Memories 84 Vol.4",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 527,
+      "title" : "Lost Memories 84 Vol.5",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 627,
+      "title" : "Lost Memories 84 Vol.6",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 727,
+      "title" : "Lost Memories 84 Vol.7",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 827,
+      "title" : "Lost Memories 84 Vol.8",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    },
+    {
+      "id" : 927,
+      "title" : "Lost Memories 84 Vol.9",
+      "year" : 1993,
+      "runtime" : 101,
+      "genres" : [
+        "Drama",
+        "Romance"
+      ],
+      "director" : "Denis Villeneuve",
+      "cast" : [
+        "Leonardo DiCaprio",
+        "Natalie Portman",
+        "Ryan Gosling",
+        "Tom Cruise"
+      ],
+      "rating" : 6.9,
+      "votes" : 606573,
+      "revenue" : 165.6,
+      "budget" : 338.9,
+      "language" : "German"
+    }
+  ],
+  "movies_by_decade" : {
+    "2020s" : 2550,
+    "1990s" : 3300,
+    "2000s" : 4650,
+    "2010s" : 4500
+  },
+  "movies_by_genre" : {
+    "Thriller" : 4650,
+    "Horror" : 1500,
+    "Romance" : 3000,
+    "Drama" : 3750,
+    "Mystery" : 1650,
+    "Sci-Fi" : 1800,
+    "Adventure" : 1200,
+    "Action" : 4500,
+    "Biography" : 900,
+    "Comedy" : 3600
+  },
+  "average_rating_by_genre" : {
+    "Thriller" : 7.677419354838729,
+    "Horror" : 8.140000000000006,
+    "Romance" : 7.790000000000056,
+    "Drama" : 7.448000000000164,
+    "Mystery" : 7.5454545454544695,
+    "Sci-Fi" : 7.3500000000000165,
+    "Adventure" : 7.637500000000011,
+    "Action" : 7.429999999999946,
+    "Biography" : 7.083333333333285,
+    "Comedy" : 7.64166666666653
+  },
+  "average_runtime_by_genre" : {
+    "Thriller" : 130.48387096774192,
+    "Horror" : 136.1,
+    "Romance" : 146.15,
+    "Drama" : 128.84,
+    "Mystery" : 118.45454545454545,
+    "Sci-Fi" : 134.08333333333334,
+    "Adventure" : 138.25,
+    "Action" : 136.53333333333333,
+    "Biography" : 130.66666666666666,
+    "Comedy" : 142.41666666666666
+  },
+  "most_prolific_directors" : [
+    {
+      "director" : "Christopher Nolan",
+      "count" : 1650
+    },
+    {
+      "director" : "Paul Thomas Anderson",
+      "count" : 1350
+    },
+    {
+      "director" : "Alfonso Cuarón",
+      "count" : 1350
+    },
+    {
+      "director" : "Martin Scorsese",
+      "count" : 1200
+    },
+    {
+      "director" : "Wes Anderson",
+      "count" : 1200
+    }
+  ],
+  "most_frequent_actors" : [
+    {
+      "actor" : "Scarlett Johansson",
+      "count" : 5100
+    },
+    {
+      "actor" : "Will Smith",
+      "count" : 4500
+    },
+    {
+      "actor" : "Samuel L. Jackson",
+      "count" : 4200
+    },
+    {
+      "actor" : "Tom Cruise",
+      "count" : 4200
+    },
+    {
+      "actor" : "Morgan Freeman",
+      "count" : 4050
+    }
+  ],
+  "profitable_movies" : {
+    "count" : 5850,
+    "average_roi" : 21.123134528978984
+  }
+}
